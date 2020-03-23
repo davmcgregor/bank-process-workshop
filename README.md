@@ -43,13 +43,11 @@ I would like to be able to print a current balance
 | Account.new |  PrintBalance should return Current Balance: £0.00 |
 | Account.new | PrintStatement should print "date || credit || debit || balance" |
 | Account.desposit(1, 01/01/2020) |  PrintBalance should return 1.00, |
-| Account.desposit(1, 01/01/2020) |  PrintStatement should print "date || credit || debit || balance /n 01/01/2020 || 1.00 || || 1.00" |
+| Account.desposit(1, 01/01/2020) |  PrintStatement should print "date || credit || debit || balance \n 01/01/2020 || 1.00 || || 1.00" |
 | Account.desposit(1, 02/01/2020) |  PrintBalance should return 2.00, |
-| Account.desposit(1, 02/01/2020) |  PrintStatement should print "date || credit || debit || balance /n 02/01/2020 || 1.00 || || 2.00 /n 01/01/2020 || 1.00 || || 1.00" |
+| Account.desposit(1, 02/01/2020) |  PrintStatement should print "date || credit || debit || balance \n 02/01/2020 || 1.00 || || 2.00 \n 01/01/2020 || 1.00 || || 1.00" |
 | Account.withdraw(1, 03/01/2020) |  PrintBalance should return 1.00, |
-| Account.withdraw(1, 03/01/2020) |  PrintStatement should print "date || credit || debit || balance /n 03/01/2020 || || 1.00 || 1.00 /n 02/01/2020 || 1.00 || || 2.00 /n 01/01/2020 || 1.00 || || 1.00" |
-
-
+| Account.withdraw(1, 03/01/2020) |  PrintStatement should print "date || credit || debit || balance \n 03/01/2020 || || 1.00 || 1.00 \n 02/01/2020 || 1.00 || || 2.00 \n 01/01/2020 || 1.00 || || 1.00" |
 
 ## <a name="Methods">Objects & Methods</a>
 
